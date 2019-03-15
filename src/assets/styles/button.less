@@ -1,0 +1,293 @@
+button {
+    font-weight: 700;
+}
+
+.btn {
+    font-size: 14px;
+    white-space: normal;
+    color: #fff;
+    border-radius: calc(@btn-height / 2);
+    z-index: 1;
+    overflow: visible;
+    text-overflow: ellipsis;
+    position: relative;
+    padding: 0px 12px;
+    line-height: 18px;
+    min-height: @btn-height;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    border: 0;
+    text-align: center;
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.24);
+    vertical-align: middle;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &.brd {
+        border: 2px solid rgba(255,255,255,0.8);
+    }
+
+    &:not(.btn-icon) {
+        & > img {
+            margin-right: 10px;
+            vertical-align: middle;
+            margin-top: -3px; // why do we need this?!
+
+            &:not(.no-scale) {
+                height: calc(@btn-height - 6px);
+            }
+        }
+    }
+
+    &:not(.btn-default) > i {
+        color: #fff;
+    }
+
+    img {
+        pointer-events: none;
+    }
+
+    i {
+        pointer-events: none;
+    }
+
+    .badge {
+        @badge-size: 24px;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        padding: 0px;
+        line-height: 22px;
+        height: @badge-size;
+        min-width: @badge-size;
+        font-size: 12px;
+        border-radius: 12px;
+        border: 1px solid #fff;
+    }
+
+    input[type="file"] {
+        position: absolute;
+        top: 0px;
+        opacity: 0;
+        left: 0;
+    }
+}
+
+.btn-sm {
+    padding: 0px 8px;
+    line-height: 32px;
+    min-height: 32px;
+    font-size: 12px;
+}
+
+// .btn-lg {
+//     @btn-lg-height: 44px;
+//     min-height: @btn-lg-height;
+//     border-radius: calc(@btn-lg-height / 2);
+// }
+
+.btn-default {
+    background-color: #fff;
+    color: @text-color-dark;
+}
+
+.btn-accent {
+    background-color: @brand-accent;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: @brand-danger;
+}
+
+.btn-primary {
+    background-color: @brand-primary;
+}
+
+.btn-maple {
+    background-color: @maple-brown;
+    color: #fff;
+    text-shadow:
+        -1px -1px 0 @maple-brown-light,
+        1px -1px 0 @maple-brown-light,
+        -1px 1px 0 @maple-brown-light,
+        1px 1px 0 @maple-brown-light;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.font-hover-shadow {
+    &:hover {
+        font-weight: 700;
+        text-shadow:
+            -1px -1px 0 @maple-brown,
+            1px -1px 0 @maple-brown,
+            -1px 1px 0 @maple-brown,
+            1px 1px 0 @maple-brown;
+        transition: all 0.25s ease;
+    }
+}
+
+.btn-icon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+
+    .zmdi {
+        font-size: 17px;
+    }
+
+    img {
+        height: 24px;
+    }
+
+    &.btn-sm {
+        height: 32px;
+        width: 32px;
+        i {
+            line-height: 33px;
+        }
+    }
+
+    &.btn-lg {
+        @size: 56px;
+        height: @size;
+        width: @size;
+    }
+}
+
+.btn-icon-text {
+    & > .zmdi {
+        font-size: 15px;
+        display: inline-block;
+        line-height: 40px;
+        margin-right: 5px;
+    }
+}
+
+.btn-brd {
+    color: @brand-accent;
+    background: white;
+    border: 1px solid @brand-accent;
+    border-radius: 17px;
+    box-shadow: none;
+}
+
+.btn-flat {
+    box-shadow: none !important;
+    border: none;
+    color: @brand-primary;
+    text-decoration: none;
+    border-radius: 2px;
+    background: none
+}
+
+.btn-tiny {
+    height: 24px;
+    width: 24px;
+    padding: 0px;
+    border-radius: 4px;
+
+    i {
+        font-size: 18px;
+        color: #fff;
+        line-height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.btn-block {
+    display: flex;
+    width: 100%;
+}
+
+.btn-file {
+    overflow: hidden;
+    position: relative;
+    > input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        font-size: 23px;
+        height: 100%;
+        width: 100%;
+        direction: ltr;
+        cursor: pointer;
+    }
+}
+
+button {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.btn-view-more {
+    .btn;
+
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15) !important;
+
+    background-color: #fff;
+    color: @brand-accent;
+
+    i {
+        color: @brand-accent !important;
+        font-size: 22px;
+        margin-left: 4px;
+    }
+
+    .badge {
+        right: 8px;
+        top: 4px;
+    }
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.radio-buttons {
+    .btn.btn-brd {
+        padding: 8px;
+
+        i.zmdi-check {
+            position: absolute;
+            left: 16px;
+            font-size: 16px;
+            color: @brand-primary;
+        }
+
+        color: @brand-primary;
+        border: 4px solid @brand-primary;
+        border-radius: 16px;
+
+        &:hover, &.selected {
+            border: 4px solid @brand-accent;
+            color: @brand-accent;
+
+            i.zmdi-check {
+                color: @brand-accent;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+@text-color:                rgb(0.36*255, 0.36*255, 0.36*255);
+@text-color-light:          rgb(0.66*255, 0.66*255, 0.66*255);
+@text-color-dark:           rgb(0.14*255, 0.14*255, 0.14*255);
+
+@grid-columns:              12;
+@grid-gutter-width:         16px;
+@grid-float-breakpoint:     @screen-sm-min;
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+/*
+* Material Colors
+*/
+@m-white:                  #ffffff;
+@m-black:                  #000000;
+@m-blue:                   #2196F3;
+@m-red:                    #F44336;
+@m-purple:                 #9C27B0;
+@m-deeppurple:             #673AB7;
+@m-lightblue:              #03A9F4;
+@m-cyan:                   #00BCD4;
+@m-teal:                   #009688;
+@m-green:                  rgba(76, 175, 80, 1);
+@m-lightgreen:             #8BC34A;
+@m-lime:                   #CDDC39;
+@m-yellow:                 #FFEB3B;
+@m-amber:                  #FFC107;
+@m-orange:                 #FF9800;
+@m-deeporange:             #FF5722;
+@m-gray:                   #9E9E9E;
+@m-lightgray:              #F4F4F4;
+@m-bluegray:               #607D8B;
+@m-indigo:                 #3F51B5;
+@m-pink:                   #E91E63;
+@m-brown:                  #795548;
+
+@brand-primary-grad:        linear-gradient(90deg, rgba(0, 150, 190, 0.5), #adecd8, rgba(0, 150, 190, 1));
+@brand-accent-grad:         linear-gradient(90deg, rgba(76, 175, 80, 0.5), #adecd8, rgba(76, 175, 80, 1));
+@brand-mix:                 linear-gradient(90deg, rgba(0, 150, 190, 0.5), #adecd8, rgba(76, 175, 80, 1));
+
+@brand-primary:            rgba(0, 150, 190, 1);
+@brand-accent:              @m-green;
+@brand-success:             @m-green;
+@brand-info:                @m-cyan;
+@brand-warning:             @m-orange;
+@brand-danger:              @m-red;
+
+@maple-brown:               rgba(214, 210, 194, 1);
+@maple-brown-light:         rgba(203, 179, 142, 1);
+
+@btn-default-color:              #333;
+@btn-default-bg:                 #fff;
+@btn-default-border:             #ccc;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 5%);
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 5%);
+
+@btn-warning-color:              #fff;
+@btn-warning-bg:                 @brand-warning;
+@btn-warning-border:             darken(@btn-warning-bg, 5%);
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 5%);
+
+@btn-link-disabled-color:        #a1a1A1;
+
+@bottom-navigation-height: 56px;
+@header-height: 48px;
+@header-height-xs: 48px;
+
+@padding-base-vertical:     6px;
+@padding-base-horizontal:   12px;
+
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  16px;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
+
+@line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
+@line-height-small:         1.5;
+
+@border-radius-base:        4px;
+@border-radius-large:       6px;
+@border-radius-small:       3px;
+
+@ms-font-size:            16px;
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+// Allows for customizing button radius independently from global border radius
+@btn-border-radius-base:         @border-radius-base;
+@btn-border-radius-large:        @border-radius-large;
+@btn-border-radius-small:        @border-radius-small;
+@btn-height:                    44px;
+
+@page-max-width:         480px;
+@chat-product-width: 160px;
+@ch-side-padding: 8px;
+@ch-side-padding-lg: 68px;

@@ -1,0 +1,26 @@
+/*
+ * Font Face
+ */
+ .font-face(@family, @name, @weight: 300, @style){
+    @font-face{
+        font-family: @family;
+        src: url('../fonts/@{name}.ttf') format('truetype');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+
+.font-face(Maplestory-Light, 'Maplestory-Light', 300, normal);
+.font-face(Maplestory-Bold, 'Maplestory-Bold', 700, normal);
+
+.font-maple-light { font-family: 'Maplestory-Light' }
+.font-maple-bold { font-family: 'Maplestory-Bold' }
+
+@font-face { font-family: 'Intro-Black-Italic'; src: url('../fonts/Intro-Black-Italic.woff') format('woff'); }
+@font-face { font-family: 'Intro-Bold'; src: url('../fonts/Intro-Bold.woff') format('woff'); }
+@font-face { font-family: 'Intro-Light'; src: url('../fonts/Intro-Light.woff') format('woff'); }
+@font-face { font-family: 'Intro-Regular'; src: url('../fonts/Intro-Regular.woff') format('woff'); }
+
+.font-intro-black { font-family: 'IntroBlack'; }
+.font-intro-bold { font-family: 'IntroBold'; }
+.font-intro-regular { font-family: 'IntroRegular'; }

@@ -1,0 +1,47 @@
+table.data-list {
+    display: contents;
+    font-size: 12px;
+
+    td {
+        padding: 8px;
+        min-width: 56px;
+        
+        > div.pre {
+            white-space: pre-line;
+            max-width: 400px;
+            max-height: 80px;
+            overflow-y: scroll;
+        }
+
+        &.lines-1 {
+            line-height: 32px;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    
+    thead {
+        background: @brand-primary;
+        color: #fff;
+
+        td  {
+            white-space: nowrap;
+        }
+    }
+
+    tbody {
+        tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.6);
+        }
+    
+        tr:nth-child(odd) {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        tr:hover {
+            background: rgba(0, 150, 190, 0.1);
+        }
+    }
+}
