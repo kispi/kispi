@@ -1,16 +1,44 @@
 <template>
     <div class="about">
-        <div class="introduction" v-html="introduction"></div>
+        <h2 class="c-vscode-template m-b-8">Profile</h2>
+        <div class="profile m-b-24 p-8">
+            <div class="c-vscode-string m-b-8" :key="item.key" v-for="item in profile">
+                {{ item.key }}: {{ item.value }}
+            </div>
+        </div>
+        <h2 class="c-vscode-template m-b-8">Intro</h2>
+        <div class="c-vscode-string introduction p-8" v-html="introduction"></div>
     </div>
 </template>
 <script>
 import HardCoded from '@/assets/hard-coded'
 
 export default {
-    name: "About",
+    name: "about",
     computed: {
         introduction() {
             return HardCoded.profile
+        },
+        profile() {
+            return [{
+                key: "Love",
+                value: "Rule, Protocols (Web, HTTP, JSON, POW, Music...) ..."
+            }, {
+                key: "Lang",
+                value: "Golang, Javascript, C"
+            }, {
+                key: "Do",
+                value: "Code, Sing, Compose, Game..."
+            }, {
+                key: "Major",
+                value: "CSE"
+            }, {
+                key: "Education",
+                value: "Seoul National University (2008 ~ 2016)"
+            }, {
+                key: "Interested in",
+                value: "Scalable Architecture"
+            }]
         }
     }
 }

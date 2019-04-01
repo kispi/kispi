@@ -3,7 +3,7 @@
         <!-- <Home/> -->
         <div class="category m-b-24" :key="idx" v-for="(tech, idx) in techs">
             <span class="text-xl" :class="tech.class">{{ tech.category }}</span>
-            <ul class="p-l-16">
+            <ul class="c-vscode-string p-l-16">
                 <li class="f-16 m-b-5" :key="item" v-for="item in tech.items">{{ item }}</li>
                 <li class="f-16 m-b-5">...</li>
             </ul>
@@ -14,11 +14,12 @@
 import Home from '@/components/Home'
 
 export default {
-    name: "Techs",
+    name: "techs",
     components: { Home },
     computed: {
         techs() {
             return [{
+                class: "c-vscode-template",
                 category: "Backend",
                 items: [
                     "golang (beego)", "java (spring)", "php (laravel, ci)", "python (django)", "node (express)"

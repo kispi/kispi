@@ -7,7 +7,7 @@
             <div class="menu-item slow-hover"
                 :class="{'selected': item.name === selected.name}"
                 @click="onClickMenu(item)">
-                {{ item.name }}
+                {{ item.name }}<span class="c-vscode-bracket">()</span>
             </div>
         </div>
     </div>
@@ -21,13 +21,13 @@ export default {
     computed: {
         items() {
             return [{
-                name: "About",
+                name: "about",
             }, {
-                name: "Techs"
+                name: "techs"
             }, {
-                name: "Projects"
+                name: "projects"
             }, {
-                name: "Post"
+                name: "post"
             }]
         }
     },

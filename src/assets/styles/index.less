@@ -11,6 +11,7 @@
 @import 'grid';
 @import 'modal';
 @import 'preloader';
+@import 'routes';
 @import 'tables';
 @import 'text';
 @import 'toast';
@@ -20,10 +21,6 @@
     color: white;
     font-size: 13px;
     padding: 15px 30px;
-}
-
-body {
-    margin: 0px;
 }
   
  /*
@@ -65,9 +62,7 @@ body {
         1px 1px 0 @brand-primary;
 }
 
-a:visited,
-a:hover,
-a:active {
+a {
     color: inherit;
 }
 
@@ -134,12 +129,6 @@ button:disabled {
         display: table;
         clear: both;
     }
-}
-
-.content {
-    padding: 88px 16px 0 16px;
-    background: #fff;
-    height: 100vh;
 }
 
 .page-content {
@@ -402,26 +391,27 @@ dl {
     top: 0;
     left: 0;
     right: 0;
-    border-bottom: 1px solid lightgray;
     z-index: 1;
-    background: #fff;
+    background: @vscode-theme-header;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.72);
 
     .menu {
         font-size: 16px;
         height: @header-height;
 
         .menu-item {
-            color: #333;
+            color: @vscode-theme-function;
             height: @header-height;
             line-height: @header-height;
         
             &:hover, &.selected {
-                color: @brand-accent;
+                font-weight: 700;
                 font-size: 18px;
             }
 
             &.selected {
-                border-bottom: 2px solid @brand-accent;
+                font-weight: 700;
+                border-bottom: 2px solid @vscode-theme-function;
             }
     
             text-align: center;
@@ -432,10 +422,4 @@ dl {
 
 #section {
     padding: @header-height 8px 80px 8px;
-}
-
-@media (min-width: 481px) {
-    #section {
-        padding: 80px 40px;
-    }
 }

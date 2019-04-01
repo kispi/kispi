@@ -17,6 +17,8 @@
 }
 
 body {
+    background: @vscode-theme-black;
+    margin: 0;
     color: @text-color;
     font-size: 14px;
     line-height: 16px;
@@ -24,7 +26,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     word-break: break-word;
-    font-family: 'Intro-Regular', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 
     &.swal2-height-auto {
         &.swal2-shown{
@@ -35,4 +37,9 @@ body {
 
 html, body {
     height: 100% !important;
+}
+
+h2, h3, h4 {
+    padding: 0;
+    margin: 0;
 }

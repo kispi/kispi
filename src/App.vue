@@ -63,15 +63,4 @@ export default {
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 20;
 }
-
-#background {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.9;
-
-}
 </style>
