@@ -26,10 +26,10 @@
                     :key="0"
                     class="c-vscode-function pointer-cursor text-underline"
                     @click="showSocial = true"
-                    v-if="!showSocial">아직 내가 머신러닝보다 잘하는 것들</div>
+                    v-show="!showSocial">아직 내가 머신러닝보다 잘하는 것들</div>
                 <div
                     :key="1"
-                    v-if="showSocial">
+                    v-show="showSocial">
                     <i
                         @click="showSocial = false"
                         class="zmdi zmdi-close pointer-cursor"></i>
