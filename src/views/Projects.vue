@@ -6,12 +6,12 @@
                 <div class="p-8">
                     <div class="c-vscode-key">{{ item.desc }}</div>
                     <div class="c-vscode-string">{{ item.charge }}</div>
-                    <div class="c-vscode-bracket">{{ item.tech }}</div>
+                    <div class="c-vscode-text">{{ item.tech }}</div>
                     <div>
                         <a
                             target="_blank"
                             :href="link"
-                            class="c-vscode-function text-underline display-block"
+                            class="c-vscode-function text-underline display-table"
                             :key="link"
                             v-for="link in item.links">
                             {{ link }}
@@ -43,7 +43,7 @@
                             class="c-vscode-function text-underline display-block m-b-8">
                             {{ item.link }}
                         </a>
-                        <div class="limited-width c-vscode-bracket" v-html="item.desc"/>
+                        <div class="limited-width c-vscode-text" v-html="item.desc"/>
                     </div>
                 </div>
             </transition-group>
@@ -69,7 +69,7 @@ export default {
                     "http://maplets.kispi.net/"
                 ]
             }, {
-                period: "2018-01 ~",
+                period: "2018-01 ~ 2019-04",
                 type: "job",
                 title: "TokoTalk",
                 desc: "인도네시아 소상공인들을 대상으로 한 E-Commerce 솔루션",

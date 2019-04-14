@@ -2,12 +2,12 @@
     <div class="about">
         <h2 class="c-vscode-template m-b-8">Profile</h2>
         <div class="profile m-b-24 p-8">
-            <div class="c-vscode-string m-b-8" :key="item.key" v-for="item in profile">
-                {{ item.key }}: {{ item.value }}
+            <div class="m-b-8" :key="item.key" v-for="item in profile">
+                <span class="c-vscode-key">{{ item.key }}:</span><span class="c-vscode-string m-l-8">{{ item.value }}</span>
             </div>
         </div>
         <h2 class="c-vscode-template m-b-8">Intro</h2>
-        <div class="c-vscode-string introduction p-8" v-html="introduction"></div>
+        <div class="c-vscode-text introduction p-8" v-html="introduction"></div>
     </div>
 </template>
 <script>

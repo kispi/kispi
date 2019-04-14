@@ -3,7 +3,7 @@
         <!-- <Home/> -->
         <div class="category m-b-24" :key="idx" v-for="(tech, idx) in techs">
             <span class="text-xl" :class="tech.class">{{ tech.category }}</span>
-            <ul class="c-vscode-string p-l-16">
+            <ul class="c-vscode-text p-l-16">
                 <li class="f-16 m-b-5" :key="item" v-for="item in tech.items">{{ item }}</li>
                 <li class="f-16 m-b-5">...</li>
             </ul>

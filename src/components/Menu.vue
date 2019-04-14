@@ -7,7 +7,7 @@
             <div class="menu-item slow-hover"
                 :class="{'selected': item.name === selected.name}"
                 @click="onClickMenu(item)">
-                {{ item.name }}<span class="c-vscode-bracket">()</span>
+                {{ item.name }}<span class="c-vscode-text">()</span>
             </div>
         </div>
     </div>
