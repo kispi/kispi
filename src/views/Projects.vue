@@ -69,6 +69,13 @@ export default {
                     "http://maplets.kispi.net/"
                 ]
             }, {
+                period: "2019-04 ~",
+                type: "job",
+                title: "Vanillabridge",
+                desc: "주선자가 해주는 진짜 소개팅! 바닐라브릿지입니다",
+                charge: "바닐라브릿지 앱, 주선자용 웹 앱, CS용 Admin PWA 개발",
+                tech: "Ionic / Vue / ROR / Go / Firebase"
+            }, {
                 period: "2018-01 ~ 2019-04",
                 type: "job",
                 title: "TokoTalk",
