@@ -32,7 +32,7 @@ export default {
                 ]
             }, {
                 class: "c-blue",
-                category: "Puslishing",
+                category: "Publishing",
                 items: [
                     "html5", "css", "less", "sass",
                 ]
