@@ -22,13 +22,13 @@ export default {
                 class: "c-vscode-template",
                 category: "Backend",
                 items: [
-                    "golang (beego)", "java (spring)", "php (laravel, ci)", "python (django)", "node (express)"
+                    "golang (beego)", "java (spring)", "php (laravel, ci)", "python (django, flask)", "node (express)", "ruby (rails)"
                 ]
             }, {
                 class: "c-accent",
                 category: "Frontend",
                 items: [
-                    "javascript (vue, angular)", "webpack", "nuxt", "websocket"
+                    "javascript (vue, react, angular)", "webpack", "nuxt", "websocket"
                 ]
             }, {
                 class: "c-blue",
@@ -40,7 +40,7 @@ export default {
                 class: "c-pink",
                 category: "Design Pattern",
                 items: [
-                    "oop", "mv(w)", "flux", "prototype", "composition"
+                    "fp", "oop", "mv(w)", "flux", "prototype", "composition"
                 ]
             }, {
                 class: "c-teal",
@@ -52,7 +52,7 @@ export default {
                 class: "c-orange",
                 category: "Language EXP",
                 items: [
-                    "c", "c++", "basic (vb)", "java", "golang", "prolog", "lisp", "ocaml", "python", "javascript", "php", "html", "asm"
+                    "c", "c++", "basic (vb)", "java", "golang", "prolog", "lisp", "ocaml", "python", "ruby", "javascript", "php", "html", "asm"
                 ]
             }]
         }
