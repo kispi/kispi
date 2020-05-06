@@ -24,8 +24,8 @@ export default {
                 key: "Love",
                 value: "Rule, Protocols (Web, HTTP, JSON, POW, Music...) ..."
             }, {
-                key: "Lang",
-                value: "Golang, Javascript, C"
+                key: "Abilities",
+                value: "Backend, Frontend, DevOps, ... etc. Pretty much everything you need to make your own business idea become reality."
             }, {
                 key: "Do",
                 value: "Code, Sing, Compose, Game..."
@@ -35,9 +35,6 @@ export default {
             }, {
                 key: "Education",
                 value: "Seoul National University (2008 ~ 2016)"
-            }, {
-                key: "Interested in",
-                value: "Scalable Architecture"
             }]
         }
     }

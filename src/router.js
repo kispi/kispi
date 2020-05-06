@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import About from './views/About'
 import Techs from './views/Techs'
 import Projects from './views/Projects'
-import Post from './views/post/Index'
+import Contact from './views/Contact'
 
 Vue.use(Router)
 
@@ -21,9 +21,9 @@ export default new Router({
         name: 'projects',
         component: Projects
     }, {
-        path: '/post',
-        name: 'post',
-        component: Post
+        path: '/contact',
+        name: 'contact',
+        component: Contact
     }, {
         path: '/',
         name: 'about',

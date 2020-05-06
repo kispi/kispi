@@ -27,7 +27,7 @@ export default {
             }, {
                 name: "projects"
             }, {
-                name: "post"
+                name: "contact"
             }]
         }
     },
