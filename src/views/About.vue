@@ -3,7 +3,14 @@
         <h2 class="c-vscode-template m-b-8">Profile</h2>
         <div class="profile m-b-24 p-8">
             <div class="m-b-8" :key="item.key" v-for="item in profile">
-                <span class="c-vscode-key">{{ item.key }}:</span><span class="c-vscode-string m-l-8">{{ item.value }}</span>
+                <span class="c-vscode-key">{{ item.key }}:</span>
+                <span
+                    class="c-vscode-string"
+                    :key="value"
+                    v-for="(value, idx) in item.values">
+                    {{ value }}
+                    <span v-if="idx < item.values.length - 1">, </span>
+                </span>
             </div>
         </div>
         <h2 class="c-vscode-template m-b-8">Intro</h2>
@@ -22,19 +29,22 @@ export default {
         profile() {
             return [{
                 key: "Love",
-                value: "Rule, Protocols (Web, HTTP, JSON, POW, Music...) ..."
+                values: ["Rule", "Protocols (Web, HTTP, JSON, POW, Music...)"]
             }, {
                 key: "Abilities",
-                value: "Backend, Frontend, DevOps, ... etc. Pretty much everything you need to make your own business idea become reality."
+                values: ["Backend", "Frontend", "DevOps, ... etc. Pretty much everything you need to make your own business idea become reality."]
             }, {
                 key: "Do",
-                value: "Code, Sing, Compose, Game..."
+                values: ["Code", "Sing", "Compose", "Game"]
             }, {
                 key: "Major",
-                value: "CSE"
+                values: ["CSE"]
             }, {
                 key: "Education",
-                value: "Seoul National University (2008 ~ 2016)"
+                values: ["Seoul National University (2008 ~ 2016)"]
+            }, {
+                key: "Interested in",
+                values: ["Finance", "Cryptoassets", "Trading", "Scalable Architecture"]
             }]
         }
     }

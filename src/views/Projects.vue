@@ -59,14 +59,41 @@ export default {
     computed: {
         items() {
             return [{
+                period: "2021-07 ~",
+                type: "personal",
+                title: "COINSECT",
+                desc: "코인충 - 대한민국 No.1 암호자산 커뮤니티",
+                charge: "채팅 / 거래소간 실시간 가격비교 등을 제공하는 커뮤니티",
+                tech: "Vue (composition api) / Nodejs (fastify + typeorm) / MySQL / Redis / Websocket / AWS (EC2, ELB, Route53, Cloudfront, ACM, S3)",
+                links: [
+                    "https://coinsect.io"
+                ]
+            }, {
+                period: "2020-10 ~",
+                type: "job",
+                title: "SwatchOn",
+                desc: "SwatchOn - No. 1 Wholesale fabric platform for Fashion Brands",
+                charge: "글로벌 서비스 SwatchOn의 프론트엔드 리빌딩 (레일즈 ERB => Vue SPA)",
+                tech: "Vue (composition api) / Rails / REST API",
+                links: [
+                    "https://swatchon.com"
+                ]
+            }, {
+                period: "2019-04 ~ 2020-05",
+                type: "job",
+                title: "Vanillabridge",
+                desc: "바닐라브릿지 - 주선자가 해주는 진짜 소개팅",
+                charge: "아이오닉으로 되어 있던 기존 레거시 앱을 React Native + WebView를 이용한 웹앱으로 포팅 및 주선자용, 유저용 앱, 어드민 제작",
+                tech: "Ionic (for legacy) / Rails / Go / Vue / MySQL / Websocket",
+            }, {
                 period: "2019-01 ~",
                 type: "personal",
                 title: "MAPLETs",
                 desc: "메이플스토리 유틸리티, 시뮬레이터들 및 커뮤니티",
-                charge: "기획 / 디자인 / 개발 / 배포",
-                tech: "Vue / Go / MySQL / Redis / Websocket / GA",
+                charge: "게시판 / 채팅을 제공하는 Nuxt를 이용한 SSR 앱",
+                tech: "Nuxt (Vue options api) / Go / MySQL / Redis / Websocket / GA / AWS (EC2) / REST API",
                 links: [
-                    "http://maplets.kispi.net/"
+                    "http://maplets.kispi.net"
                 ]
             }, {
                 period: "2019-04 ~ 2020-05",
@@ -94,8 +121,8 @@ export default {
                 desc: "인도네시아 소상공인들을 대상으로 한 E-Commerce 솔루션",
                 charge: "Go, AngularJS, Vue를 이용한 풀스택 (Frontend, RestAPI) 개발",
                 links: [
-                    "https://tokoadmin.tokotalk.com/",
-                    "https://shop.tokotalk.com/"
+                    "https://tokoadmin.tokotalk.com",
+                    "https://shop.tokotalk.com"
                 ]
             }, {
                 period: "2016-05 ~ 2016-08",
@@ -104,7 +131,7 @@ export default {
                 charge: "PHP (Codeignitor) 개발",
                 tech: "PHP / MySQL / JQuery / Docker",
                 links: [
-                    "https://fanmaum.com/"
+                    "https://fanmaum.com"
                 ]
             }]
         },

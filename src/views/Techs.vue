@@ -21,19 +21,19 @@ export default {
                 class: "c-vscode-template",
                 category: "Backend",
                 items: [
-                    "golang (beego)", "java (spring)", "php (laravel, ci)", "python (django, flask)", "node (express)", "ruby (rails)", "mysql", "redis", "mongodb"
+                    "golang (beego)", "node (express, fastify, typeorm)", "java (spring)", "php (laravel, ci, phinx)", "python (django)"
                 ]
             }, {
                 class: "c-accent",
                 category: "Frontend",
                 items: [
-                    "html", "css", "javascript", "typescript", "less", "sass", "vue", "svelte", "react", "angular", "vuex", "redux", "mobx", "webpack", "grunt", "gulp", "nuxt", "websocket"
+                    "javascript (vue, react, svelte, angular)", "webpack", "nuxt", "websocket", "vuex", "mobx", "SEO"
                 ]
             }, {
                 class: "c-blue",
                 category: "Mobile App",
                 items: [
-                    "android", "ios", "react-native", "ionic", "flutter"
+                    "android", "ios", "react-native", "ionic"
                 ]
             }, {
                 class: "c-pink",
@@ -45,7 +45,7 @@ export default {
                 class: "c-teal",
                 category: "DevOps",
                 items: [
-                    "ec2", "s3", "route53", "rdb", "cloudfront", "apache", "nginx", "git", "pm2", "supervisor", "phinx", "zsh", "docker", "jenkins"
+                    "aws (ec2, elb, cf, acm, route53, s3...)", "apache", "nginx", "git", "mysql", "redis", "pm2", "supervisor", "zsh", "docker", "jenkins", "k8s"
                 ]
             }, {
                 class: "c-orange",

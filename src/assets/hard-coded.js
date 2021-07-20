@@ -8,7 +8,7 @@ export default {
   orm, cache, transaction, router, controller, context, session, cron, auth... 등등 모던 웹에 필요한 요소들을 이해하고 있고 필요에 따라 어느 언어로든(ㄹㅇ?) 구현, 작성하고 완성된 서비스를 배포할 수 있습니다.
 
   전통적인 SSR 언어들인 PHP, JSP 등이나, Nuxt와 같은 미들웨어를 통한 SSR 모두 익숙하며, SEO에 대한 이해가 있습니다.
-(prerender, dynamic render, ssr...)
+(meta tags, semantic web, prerender, dynamic render, ssr...)
 
   대학 시절 <span class="text-linethrough o-50 c-gray">혹독한 고문을 통해</span> 재귀적인 사고에도 익숙해져서 LISP 계통 언어도 잘 하는 편입니다.
 
